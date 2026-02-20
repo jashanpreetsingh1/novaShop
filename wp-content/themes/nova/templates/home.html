@@ -1,90 +1,91 @@
 <!-- wp:template-part {"slug":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"32px","bottom":"32px"}}}} -->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"28px","bottom":"56px","left":"20px","right":"20px"}}}} -->
 <main class="wp-block-group">
 
-    <!-- wp:heading {"level":1} -->
-    <h1>Shop Stories</h1>
-    <!-- /wp:heading -->
+    <!-- wp:group {"align":"wide","backgroundColor":"card","style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","style":"solid"},"border":{"radius":"24px"},"spacing":{"padding":{"top":"34px","right":"34px","bottom":"34px","left":"34px"}}}} -->
+    <div class="wp-block-group alignwide has-card-background-color has-background">
   
-    <!-- wp:paragraph {"textColor":"muted"} -->
-    <p class="has-muted-color">Tips, guides, and product spotlights</p>
-    <!-- /wp:paragraph -->
+      <!-- wp:heading {"level":1} --><h1>Shop Stories</h1><!-- /wp:heading -->
+      <!-- wp:paragraph {"textColor":"muted"} --><p class="has-muted-color">Buying guides, tips, and product spotlights.</p><!-- /wp:paragraph -->
   
-    <!-- wp:columns {"style":{"spacing":{"margin":{"top":"24px"}}}} -->
-    <div class="wp-block-columns">
+      <!-- wp:spacer {"height":"12px"} /-->
   
-      <!-- LEFT: posts -->
-      <!-- wp:column {"width":"68%"} -->
-      <div class="wp-block-column">
+      <!-- wp:columns {"style":{"spacing":{"margin":{"top":"18px"}}}} -->
+      <div class="wp-block-columns">
   
-        <!-- wp:search {"label":"Search posts","showLabel":false,"placeholder":"Search posts…","buttonText":"Search"} /-->
+        <!-- LEFT: posts -->
+        <!-- wp:column {"width":"68%"} -->
+        <div class="wp-block-column">
   
-        <!-- wp:spacer {"height":"14px"} /-->
+          <!-- wp:search {"label":"Search posts","showLabel":false,"placeholder":"Search posts…","buttonText":"Search"} /-->
+          <!-- wp:spacer {"height":"14px"} /-->
   
-        <!-- wp:query {"query":{"perPage":6,"postType":"post","order":"desc","orderBy":"date"}} -->
-        <div class="wp-block-query">
-          <!-- wp:post-template -->
+          <!-- wp:query {"query":{"perPage":6,"postType":"post","order":"desc","orderBy":"date"}} -->
+          <div class="wp-block-query">
+            <!-- wp:post-template -->
   
-            <!-- wp:post-title {"isLink":true} /-->
-            <!-- wp:group {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"top":"6px","bottom":"10px"}}}} -->
-            <div class="wp-block-group">
-              <!-- wp:post-date {"textColor":"muted"} /-->
-              <!-- wp:paragraph {"textColor":"muted"} -->
-              <p class="has-muted-color">•</p>
-              <!-- /wp:paragraph -->
-              <!-- wp:post-author-name {"textColor":"muted"} /-->
-            </div>
-            <!-- /wp:group -->
+              <!-- wp:post-title {"isLink":true} /-->
   
-            <!-- wp:post-excerpt {"moreText":"Read more"} /-->
-            <!-- wp:separator /-->
+              <!-- wp:group {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"top":"6px","bottom":"10px"}}}} -->
+              <div class="wp-block-group">
+                <!-- wp:post-date {"textColor":"muted"} /-->
+                <!-- wp:paragraph {"textColor":"muted"} --><p class="has-muted-color">•</p><!-- /wp:paragraph -->
+                <!-- wp:post-author-name {"textColor":"muted"} /-->
+              </div>
+              <!-- /wp:group -->
   
-          <!-- /wp:post-template -->
+              <!-- wp:post-excerpt {"moreText":"Read more"} /-->
+              <!-- wp:separator /-->
+  
+            <!-- /wp:post-template -->
+          </div>
+          <!-- /wp:query -->
+  
         </div>
-        <!-- /wp:query -->
+        <!-- /wp:column -->
+  
+        <!-- RIGHT: sidebar -->
+        <!-- wp:column {"width":"32%"} -->
+        <div class="wp-block-column">
+  
+          <!-- wp:group {"backgroundColor":"surface","style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","style":"solid"},"border":{"radius":"18px"},"spacing":{"padding":{"top":"18px","right":"18px","bottom":"18px","left":"18px"}}}} -->
+          <div class="wp-block-group has-surface-background-color has-background">
+            <!-- wp:heading {"level":3} --><h3>Topics</h3><!-- /wp:heading -->
+            <!-- wp:list -->
+            <ul>
+              <li>Deals</li>
+              <li>Student Life</li>
+              <li>Tech</li>
+              <li>Essentials</li>
+            </ul>
+            <!-- /wp:list -->
+          </div>
+          <!-- /wp:group -->
+  
+          <!-- wp:spacer {"height":"16px"} /-->
+  
+          <!-- wp:group {"backgroundColor":"surface","style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","style":"solid"},"border":{"radius":"18px"},"spacing":{"padding":{"top":"18px","right":"18px","bottom":"18px","left":"18px"}}}} -->
+          <div class="wp-block-group has-surface-background-color has-background">
+            <!-- wp:heading {"level":3} --><h3>Most Popular</h3><!-- /wp:heading -->
+            <!-- wp:list {"ordered":true} -->
+            <ol>
+              <li>Top 5 Study Essentials</li>
+              <li>Best Budget Tech Gadgets</li>
+              <li>How to Choose Headphones</li>
+            </ol>
+            <!-- /wp:list -->
+          </div>
+          <!-- /wp:group -->
+  
+        </div>
+        <!-- /wp:column -->
   
       </div>
-      <!-- /wp:column -->
-  
-      <!-- RIGHT: sidebar -->
-      <!-- wp:column {"width":"32%"} -->
-      <div class="wp-block-column">
-  
-        <!-- wp:group {"backgroundColor":"surface","style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","style":"solid"},"border":{"radius":"14px"},"spacing":{"padding":{"top":"18px","right":"18px","bottom":"18px","left":"18px"}}}} -->
-        <div class="wp-block-group has-surface-background-color has-background">
-          <!-- wp:heading {"level":3} --><h3>Topics</h3><!-- /wp:heading -->
-          <!-- wp:list -->
-          <ul>
-            <li>Deals</li>
-            <li>Student Life</li>
-            <li>Tech</li>
-            <li>Essentials</li>
-          </ul>
-          <!-- /wp:list -->
-        </div>
-        <!-- /wp:group -->
-  
-        <!-- wp:spacer {"height":"16px"} /-->
-  
-        <!-- wp:group {"backgroundColor":"surface","style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","style":"solid"},"border":{"radius":"14px"},"spacing":{"padding":{"top":"18px","right":"18px","bottom":"18px","left":"18px"}}}} -->
-        <div class="wp-block-group has-surface-background-color has-background">
-          <!-- wp:heading {"level":3} --><h3>Most Popular</h3><!-- /wp:heading -->
-          <!-- wp:list {"ordered":true} -->
-          <ol>
-            <li>Post title…</li>
-            <li>Post title…</li>
-            <li>Post title…</li>
-          </ol>
-          <!-- /wp:list -->
-        </div>
-        <!-- /wp:group -->
-  
-      </div>
-      <!-- /wp:column -->
+      <!-- /wp:columns -->
   
     </div>
-    <!-- /wp:columns -->
+    <!-- /wp:group -->
   
   </main>
   <!-- /wp:group -->
