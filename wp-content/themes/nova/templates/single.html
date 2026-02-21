@@ -1,48 +1,43 @@
 <!-- wp:template-part {"slug":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"28px","bottom":"56px","left":"20px","right":"20px"}}}} -->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"48px","bottom":"72px","left":"24px","right":"24px"}}}} -->
 <main class="wp-block-group">
 
-    <!-- wp:group {"align":"wide","backgroundColor":"card","style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","style":"solid"},"border":{"radius":"24px"},"spacing":{"padding":{"top":"38px","right":"38px","bottom":"38px","left":"38px"}}}} -->
-    <div class="wp-block-group alignwide has-card-background-color has-background">
-  
-      <!-- wp:post-title {"level":1} /-->
-  
-      <!-- wp:group {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"top":"10px","bottom":"18px"}}}} -->
-      <div class="wp-block-group">
-        <!-- wp:post-date {"textColor":"muted"} /-->
-        <!-- wp:paragraph {"textColor":"muted"} --><p class="has-muted-color">•</p><!-- /wp:paragraph -->
-        <!-- wp:post-author-name {"textColor":"muted"} /-->
-      </div>
-      <!-- /wp:group -->
-  
-      <!-- wp:post-featured-image {"isLink":false} /-->
-      <!-- wp:spacer {"height":"18px"} /-->
-      <!-- wp:post-content /-->
-  
-      <!-- wp:spacer {"height":"34px"} /-->
-      <!-- wp:heading {"level":2} --><h2>Related Posts</h2><!-- /wp:heading -->
-      <!-- wp:spacer {"height":"10px"} /-->
-  
-      <!-- wp:query {"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date"}} -->
-      <div class="wp-block-query">
-        <!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-  
-          <!-- wp:group {"backgroundColor":"surface","style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","style":"solid"},"border":{"radius":"18px"},"spacing":{"padding":{"top":"18px","right":"18px","bottom":"18px","left":"18px"}}}} -->
-          <div class="wp-block-group has-surface-background-color has-background">
-            <!-- wp:post-title {"isLink":true,"level":3} /-->
-            <!-- wp:post-date {"textColor":"muted"} /-->
-          </div>
-          <!-- /wp:group -->
-  
-        <!-- /wp:post-template -->
-      </div>
-      <!-- /wp:query -->
-  
+  <!-- wp:group {"align":"wide","backgroundColor":"card","style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","style":"solid"},"border":{"radius":"26px"},"spacing":{"padding":{"top":"44px","right":"44px","bottom":"44px","left":"44px"}}}} -->
+  <div class="wp-block-group alignwide has-card-background-color has-background">
+
+    <!-- wp:post-title {"level":1} /-->
+
+    <!-- wp:group {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"top":"10px","bottom":"18px"}}}} -->
+    <div class="wp-block-group">
+      <!-- wp:post-date {"textColor":"muted"} /-->
+      <!-- wp:paragraph {"textColor":"muted"} --><p class="has-muted-color">•</p><!-- /wp:paragraph -->
+      <!-- wp:post-author-name {"textColor":"muted"} /-->
     </div>
     <!-- /wp:group -->
-  
-  </main>
-  <!-- /wp:group -->
-  
-  <!-- wp:template-part {"slug":"footer"} /-->
+
+    <!-- wp:post-featured-image {"isLink":false} /-->
+    <!-- wp:spacer {"height":"18px"} /-->
+    <!-- wp:post-content /-->
+
+    <!-- wp:spacer {"height":"34px"} /-->
+    <h2>Related Posts</h2>
+    <!-- wp:spacer {"height":"12px"} /-->
+
+    <!-- wp:query {"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date"}} -->
+    <div class="wp-block-query">
+      <!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+        <div class="wp-block-group has-surface-background-color has-background" style="border:1px solid var(--wp--preset--color--border);border-radius:18px;padding:18px;">
+          <!-- wp:post-title {"isLink":true,"level":3} /-->
+          <!-- wp:post-date {"textColor":"muted"} /-->
+        </div>
+      <!-- /wp:post-template -->
+    </div>
+    <!-- /wp:query -->
+
+  </div>
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

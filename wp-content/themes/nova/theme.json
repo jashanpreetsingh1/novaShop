@@ -16,8 +16,8 @@
 		  { "slug": "xs", "size": "8px", "name": "XS" },
 		  { "slug": "sm", "size": "12px", "name": "S" },
 		  { "slug": "md", "size": "20px", "name": "M" },
-		  { "slug": "lg", "size": "38px", "name": "L" },
-		  { "slug": "xl", "size": "64px", "name": "XL" }
+		  { "slug": "lg", "size": "40px", "name": "L" },
+		  { "slug": "xl", "size": "72px", "name": "XL" }
 		]
 	  },
   
@@ -26,16 +26,16 @@
 		  {
 			"slug": "soft",
 			"name": "Soft Shadow",
-			"shadow": "0 10px 30px rgba(0,0,0,0.35)"
+			"shadow": "0 12px 34px rgba(0,0,0,0.35)"
 		  }
 		]
 	  },
   
 	  "color": {
 		"palette": [
-		  { "slug": "background", "color": "#050814", "name": "Background (Deep)" },
+		  { "slug": "background", "color": "#050814", "name": "Background" },
 		  { "slug": "surface", "color": "#0B1220", "name": "Surface" },
-		  { "slug": "card", "color": "#0B1F3A", "name": "Card (Hero/Card)" },
+		  { "slug": "card", "color": "#0B1F3A", "name": "Card" },
   
 		  { "slug": "text", "color": "#F8FAFC", "name": "Text" },
 		  { "slug": "muted", "color": "#B7C0D6", "name": "Muted" },
@@ -166,11 +166,15 @@
 		},
   
 		"core/button": {
-		  "border": { "radius": "14px" },
-		  "spacing": {
-			"padding": { "top": "16px", "right": "28px", "bottom": "16px", "left": "28px" }
-		  },
-		  "typography": { "fontWeight": "850" }
+		"border": { "radius": "14px" },
+		"spacing": {
+			"padding": { "top": "12px", "right": "22px", "bottom": "12px", "left": "22px" }
+		},
+		"typography": { "fontWeight": "800" }
+		},
+  
+		"core/navigation": {
+		  "typography": { "fontWeight": "650" }
 		},
   
 		"core/group": {
